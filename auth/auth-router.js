@@ -16,7 +16,7 @@ router.post('/register', (req, res) => {
       res.status(201).json({created_user: newUser, token: token})
   })
   .catch((err) => {
-      res.status(500).json(error)
+      res.status(500).json(err)
   });
 });
 
